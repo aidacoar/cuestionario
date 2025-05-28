@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cuestionario de Satisfacción</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    form {
+      display: inline-block;
+      text-align: left;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 800px;
+    }
+    h2 {
+      margin-top: 10px;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    select {
+      width: 100%;
+      padding: 5px;
+    }
+    .radio-scale {
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    .radio-scale label {
+      margin-right: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    img.logo {
+      max-width: 150px;
+    }
+    .subtitle {
+      font-size: 14px;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .instructions {
+      margin: 15px 0;
+      padding: 10px;
+      background-color: #eef;
+      border-left: 4px solid #55f;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://www.abba.es/wp-content/uploads/2023/03/FFEF.png" class="logo" alt="ESIC Logo" />
+  <h2>Cuestionario de satisfacción - Trabajo final (Metodologías)</h2>
+  <div class="subtitle">
+    Realizado por Angela Arbás, Aida Corraliza, Santiago González, Luciano Marisio, Daniela Navarro y Gonzalo Rodríguez, estudiantes del MDPO de 2024-2025
+  </div>
+
+  <form id="surveyForm">
+    <div class="section-title">Datos de Clasificación</div>
+
+    <label>Edad:</label>
+    <select name="edad" required>
+      <option value="17 o menos">17 años o menos</option>
+      <option value="18-24">18-24</option>
+      <option value="25-34">25-34</option>
+      <option value="35-44">35-44</option>
+      <option value="45-54">45-54</option>
+      <option value="55-64">55-64</option>
+      <option value="65+">Más de 64</option>
+    </select>
+
+    <label>Sexo:</label>
+    <select name="sexo" required>
+      <option value="Hombre">Hombre</option>
+      <option value="Mujer">Mujer</option>
+    </select>
+
+    <label>Estado civil:</label>
+    <select name="estado_civil" required>
+      <option value="Soltero/a">Soltero/a</option>
+      <option value="Casado/a">Casado/a</option>
+      <option value="Unido">Unido</option>
+      <option value="Separado/divorciado">Separado/divorciado</option>
+      <option value="Viudo/a">Viudo/a</option>
+    </select>
+
+    <label>Ingresos mensuales:</label>
+    <select name="ingresos" required>
+      <option value="menos de 600">menos de 600 €</option>
+      <option value="601-1000">601-1000 €</option>
+      <option value="1001-1500">1001-1500 €</option>
+      <option value="1501-2000">1501-2000 €</option>
+      <option value="2001-3000">2001-3000 €</option>
+      <option value="3001-4500">3001-4500 €</option>
+      <option value="4500+">Más de 4500 €</option>
+      <option value="NS/NC">NS/NC</option>
+    </select>
+
+    <div class="instructions">
+      <strong>Instrucciones:</strong> Para cada afirmación, seleccione una puntuación entre <strong>1 (totalmente insatisfecho)</strong> y <strong>10 (totalmente satisfecho)</strong>. Si no sabe o no desea contestar, elija <strong>NS/NC</strong>.
+    </div>
+
+<div class="section-title">A. Salario</div>
+
+    <label>El salario actual en relación con tus responsabilidades y el mercado laboral</label>
+    <div class="radio-scale">
+      <select name="salario_resposnabilidades" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+
+<div class="section-title">B. Empleados que depende de usted</div>
+
+    <label>La personas que supervisas</label>
+    <div class="radio-scale">
+      <select name="personas_supervisada" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+
+<div class="section-title">C. Tipo de trabajo que realizas</div>
+
+    <label>Las tareas y funciones que realizas en tu puesto actual</label>
+    <div class="radio-scale">
+      <select name="tareas_funciones" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+
+
+    
+    <div class="section-title">D. Flexiblidad y conciliación</div>
+
+    <label>Posibilidad de adaptar tu horario laboral a tus necesidades personales</label>
+    <div class="radio-scale">
+      <select name="horario_necesidades" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Equilibrar adecuadamente tu vida personal y profesional en tu puesto actual</label>
+    <div class="radio-scale">
+      <select name="equilibrio_vida" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>La empresa te ofrece facilidades para afrontar imprevistos</label>
+    <div class="radio-scale">
+      <select name="empresa_facilidades" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Tu entorno laboral respeta tus tiempos de descanso y vida fuera del trabajo</label>
+    <div class="radio-scale">
+      <select name="entorno_descanso" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+<div class="section-title">E. Reconocimiento de acuerdo</div>
+
+    <label>Tu esfuerzo y dedicación son valorados por la organización</label>
+    <div class="radio-scale">
+      <select name="esfuerzo_dedicación" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Recibes retroalimentación positiva de forma regular por tu desempeño</label>
+    <div class="radio-scale">
+      <select name="retroalimentación_desempeño" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Consideras que tus logros laborales son reconocidos por tus superiores</label>
+    <div class="radio-scale">
+      <select name="logros_reconocidos" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+
+<label>El reconocimiento que recibes es justo en comparación con el de tus compañeros</label>
+    <div class="radio-scale">
+      <select name="reconocimiento_justo" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+<div class="section-title">F. Formación y desarrollo</div>
+
+    <label>Tienes posibilidades reales de desarrollo profesional dentro de la organziación</label>
+    <div class="radio-scale">
+      <select name="desarrollo_profesional" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>La empresa invierte en tu crecimiento y actualización profesional</label>
+    <div class="radio-scale">
+      <select name="crecimiento_profesional" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Los programas de formación recibidos son útiles para tu desempeño actual</label>
+    <div class="radio-scale">
+      <select name="formacion_desempeño" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+<div class="section-title">G. Relación con el jefe</div>
+
+    <label>Te sientes cómodo/a comunicándote con tu superior directo</label>
+    <div class="radio-scale">
+      <select name="comnicación_jefe" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Tu jefe/a te apoya y orienta en tus tareas laborales cuando lo necesitas</label>
+    <div class="radio-scale">
+      <select name="jefe_apoyo" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Tu opinión es escuchada y tenida en cuenta por tu superior</label>
+    <div class="radio-scale">
+      <select name="opinion_superior" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+
+<label>La relación con tu jefe/a es positiva y basada en el respeto mutuo</label>
+    <div class="radio-scale">
+      <select name="relacion_jefe" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+    
+<div class="section-title">H. Condiciones físicas en el trabajo</div>
+
+    <label>La ergonomía y la comodidad de tu puesto de trabajo es óptima</label>
+    <div class="radio-scale">
+      <select name="ergonomia_comodidad" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>La iluminación y ventilación en el área de trabajo es la adecuada</label>
+    <div class="radio-scale">
+      <select name="iluminacion_ventilacion" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>La seguridad y la limpieza de tu lugar de trabajo es óptima</label>
+    <div class="radio-scale">
+      <select name="seguridad_limpieza" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+<div class="section-title">I. Carga de trabajo</div>
+
+    <label>La cantidad de trabajo que se te asigna diariamente</label>
+    <div class="radio-scale">
+      <select name="trabajo_diario" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+
+    <label>Disponibilidad de tiempo adecuado para completar las tareas sin presión excesiva</label>
+    <div class="radio-scale">
+      <select name="satisfaccion_global" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+    
+<label>El apoyo y recursos proporcionados para manejar tu carga de trabajo</label>
+    <div class="radio-scale">
+      <select name="apoyo_recursos" required>
+        <option value="">Seleccione...</option>
+        <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
+        <option value="NS/NC">NS/NC</option>
+      </select>
+    </div>
+
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <script>
+    document.getElementById('surveyForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      const data = {};
+      formData.forEach((value, key) => (data[key] = value));
+      const headers = Object.keys(data).join(',');
+      const values = Object.values(data).join(',');
+      const csvContent = headers + '\n' + values;
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'resultados_cuestionario.csv';
+      a.click();
+    });
+  </script>
+</body>
+</html>
